@@ -32,6 +32,17 @@
 	.roadmap::after {
 		display: none;
 	}
+	.paw-1,
+	.paw-2,
+	.paw-3,
+	.paw-4,
+	.paw-5,
+	.paw-6,
+	.paw-7,
+	.paw-8,
+	.paw-9 {
+		display: none;
+	}
 }
 @media (max-width: 768px) {
 	.buy {
@@ -127,6 +138,13 @@
 	.paws-life__item:nth-child(even) {
 		transform: rotate(-90deg);
 		align-self: flex-end;
+	}
+	.ca {
+		font-size: 21px;
+	}
+	.ca span {
+		display: block;
+		text-align: center;
 	}
 }
 @media (max-width: 450px) {

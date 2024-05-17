@@ -31,6 +31,30 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+}
+.paw-1 {
+	position: absolute;
+	left: 260px;
+	top: 0;
+}
+.paw-2 {
+	position: absolute;
+	right: 71px;
+	top: 0;
+}
+.paw-3 {
+	position: absolute;
+	right: 0px;
+	bottom: 75px;
+}
+.paw-4 {
+	position: absolute;
+	left: 0px;
+	bottom: 260px;
+}
+.anumated {
+	animation: main-wap 2s ease;
 }
 .main-paw {
 	display: flex;
@@ -107,9 +131,46 @@ h4 {
 	overflow: hidden;
 	position: relative;
 }
-.roadmap::after {
+.paw-5 {
 	position: absolute;
-	content: '';
+	left: 0;
+	bottom: 240px;
+}
+.paw-6 {
+	position: absolute;
+	right: 0;
+	bottom: 340px;
+}
+.paw-7 {
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+}
+.paw-8 {
+	position: absolute;
+	left: 0;
+	bottom: 45%;
+}
+.paw-9 {
+	position: absolute;
+	right: 0;
+	bottom: 45%;
+}
+.wow {
+}
+.animate__backInLeft {
+}
+.paw-6 {
+}
+.animate__bounceOutRight {
+}
+.paw-7 {
+}
+.animate__fadeInRightBig {
+}
+.roadmap-paws {
+	position: absolute;
+	// content: '';
 	width: 708px;
 	height: 359px;
 	background-image: url(../images/paws-mini.png);
@@ -128,7 +189,12 @@ h4 {
 	max-width: 667px;
 	padding: 20px 34px;
 	line-height: 0.8;
-	margin-top: 216px;
+}
+.ca {
+	margin-top: 113px;
+	margin-bottom: 113px;
+	font-size: 45px;
+	color: #fff;
 }
 .roadmap__list {
 	display: flex;
@@ -197,6 +263,7 @@ h4 {
 	flex-direction: column;
 	align-items: center;
 	overflow: hidden;
+	position: relative;
 }
 .paws-life__title {
 	font-weight: 400;
@@ -213,13 +280,18 @@ h4 {
 }
 .paws-life__gif {
 	border-radius: 60px;
-	width: 679px;
+	width: 589px;
 	height: 472px;
 	margin-top: 44px;
 	background: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.paws-life__gif img {
+	border-radius: 60px;
+	width: 100%;
+	border: 1px solid #000;
 }
 
 .items {
@@ -231,11 +303,11 @@ h4 {
 @keyframes main-wap {
 	0% {
 		opacity: 0;
-		transform: scale(0);
+		transform: scale(0) translateY(-1000px);
 	}
 	100% {
 		opacity: 1;
-		transform: scale(1);
+		transform: scale(1) translateY(0);
 	}
 }
 @import '_media.scss';
