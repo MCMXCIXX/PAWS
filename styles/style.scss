@@ -1,0 +1,241 @@
+@import '_font-face.scss';
+@import '_reset.scss';
+@import '_vars.scss';
+
+body {
+	font-family: 'Masa-Groovy';
+	color: #fff;
+}
+* {
+	box-sizing: border-box;
+	// cursor: url('paw-cursor.cur'), pointer;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Giant-Boss';
+}
+
+.main {
+}
+.buy {
+	background: #ffc4bb;
+	background-repeat: no-repeat;
+	background-image: url(../images/bg-1.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main-paw {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 752px;
+	height: 854px;
+	background-repeat: no-repeat;
+	background-image: url(../images/main.png);
+	background-size: cover;
+	background-position: center center;
+	animation: main-wap 2s ease;
+}
+.main-paw__title {
+	font-size: 118px;
+	text-align: center;
+	color: #ff7b8c;
+	margin-top: 163px;
+}
+.btn-buy {
+	display: flex;
+	background-image: url(../images/buy-btn.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 0;
+	width: 228px;
+	height: 88px;
+	justify-self: center;
+	margin-top: 95px;
+}
+.social__links {
+	width: 100%;
+	flex-grow: 1;
+	position: relative;
+}
+.social__item {
+	position: absolute;
+}
+.social__item--tg {
+	left: 142px;
+	top: 0;
+}
+.social__item--dex {
+	left: 252px;
+	bottom: 165px;
+}
+.social__item--icon {
+	right: 253px;
+	bottom: 147px;
+}
+.social__item--x {
+	right: 148px;
+	top: 0;
+}
+.buy-text {
+	max-width: 894px;
+	font-size: 40px;
+	line-height: 150%;
+	text-align: center;
+	color: #fff;
+	background: #ff7b8c;
+	border: 12px solid #fff;
+	border-radius: 90px;
+	padding: 36px 22px 22px 22px;
+}
+.roadmap {
+	background-image: url(../images/second-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -60px;
+	overflow: hidden;
+	position: relative;
+}
+.roadmap::after {
+	position: absolute;
+	content: '';
+	width: 708px;
+	height: 359px;
+	background-image: url(../images/paws-mini.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 40%;
+	left: 25%;
+	z-index: 0;
+}
+.roadmap__title {
+	font-size: 140px;
+	text-align: center;
+	color: #fff;
+	background: #000;
+	border-radius: 48px;
+	max-width: 667px;
+	padding: 20px 34px;
+	line-height: 0.8;
+	margin-top: 216px;
+}
+.roadmap__list {
+	display: flex;
+}
+.item__inner {
+	padding: 35px 43px;
+	border-radius: 53px;
+	background: #000;
+	width: 356px;
+	height: 260px;
+	margin-top: 266px;
+}
+.roadmap__item {
+}
+.roadmap__item--1 {
+	align-self: end;
+}
+.roadmap__item--1 .item__inner {
+	position: relative;
+}
+.roadmap__item--1 .item__inner::after {
+	position: absolute;
+	content: '';
+	display: flex;
+	width: 202px;
+	height: 231px;
+	background-image: url(../images/paw-clock.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: -216px;
+	transform: rotate(90deg);
+}
+.item__title {
+	font-size: 40px;
+	line-height: 150%;
+	color: #ff7b8c;
+}
+.item__text {
+	font-size: 28px;
+	color: #fff;
+	line-height: 130%;
+}
+.roadmap__item--2 {
+	align-self: center;
+}
+.roadmap__item--2 .item__inner {
+	margin-left: 100px;
+}
+.roadmap__item--3 {
+	height: 747px;
+	width: 662px;
+	background-image: url(../images/roadmap-item-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.roadmap__item--3 .item__inner {
+	margin-left: 111px;
+}
+.paws-life {
+	background-color: #ffbbdc;
+	background-image: url(../images/bg-1.png);
+	background-repeat: no-repeat;
+	background-image: url(../images/bg-1.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+.paws-life__title {
+	font-weight: 400;
+	font-size: 140px;
+	text-align: center;
+	color: #fff;
+	margin-top: 177px;
+	border-radius: 48px;
+	max-width: 1165px;
+	max-height: 153px;
+	background: #000;
+	padding: 20px 34px;
+	line-height: 0.8;
+}
+.paws-life__gif {
+	border-radius: 60px;
+	width: 679px;
+	height: 472px;
+	margin-top: 44px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.items {
+	display: flex;
+	gap: 52px;
+	margin-bottom: -30px;
+}
+
+@keyframes main-wap {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@import '_media.scss';
